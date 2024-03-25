@@ -62,8 +62,10 @@ public class Stepdefinition extends TestBase{
 	@Then("Verify the sub-total")
 	public void verify_the_sub_total() {
 			
-	System.out.println("test");	
+	plp.Verify_Sub_total("");
 	}
+	
+	
 
 
 }

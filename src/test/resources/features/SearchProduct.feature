@@ -1,4 +1,4 @@
-Feature: Verify adding a monitor to cart on Amazon portal
+Feature: Verify adding a Laptop to cart on Amazon portal
 
   Scenario Outline: As a customer when I search for Monitor, I want to see if the first selected item price is consistency after adding to the cart.
     Given the user navigates to Amazon India Portal

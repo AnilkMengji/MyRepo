@@ -1,1 +1,0 @@
-{"uuid":"94ea9119-bafd-4031-b19e-93a07b623250","name":"Scenario Outline: As a customer when I search for Monitor, I want to see if the first selected item price is consistency after adding to the cart.","children":["f0ae15c1-9a57-46c3-b0a7-7583474be72c"],"befores":[],"afters":[],"start":1711304384522,"stop":1711304420074}

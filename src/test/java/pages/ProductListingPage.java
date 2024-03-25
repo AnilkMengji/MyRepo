@@ -85,6 +85,8 @@ private String subttl ="//span[@id='sc-subtotal-amount-buybox']//span[@class='a-
 	}
 	
 	public void Click_on_FirstProduct () {		
+		
+		
 		List<WebElement> products1 = driver.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 		products1.get(0).click();
 		System.out.println("Successfully clicked on an Item");
@@ -104,7 +106,7 @@ private String subttl ="//span[@id='sc-subtotal-amount-buybox']//span[@class='a-
 		
 		
 
-String title = driver.getCurrentUrl();
+		String title = driver.getCurrentUrl();
     	
     	String ProductTitle= driver.findElement(By.xpath(Prdtitle)).getText();
     	
@@ -119,17 +121,9 @@ String title = driver.getCurrentUrl();
     	String Productprice = driver.findElement(By.cssSelector(Prdctprc)).getText();
  
     	System.out.println("The Product Price is :"+Productprice);
-   	
-    }
 		
-		
-    	
-	
-	
-	
-    	
-    
-	
+	}
+
 	public void addToCart(String ActualPageTitle) {
 		
 		
@@ -168,21 +162,22 @@ String title = driver.getCurrentUrl();
 	WebElement ele = driver.findElement(By.xpath("//span[@class='nav-cart-icon nav-sprite']")); 
 	act.doubleClick(ele).perform();
 	
-	
-	String Subtotal = driver.findElement(By.xpath(subttl)).getText();
-	
-	System.out.println("The Subtotal is : "+Subtotal);
-
-	
+		}
+    	
+    	
+	}
+		public void Verify_Sub_total(String Productprice) {
 		
+			String Subtotal = driver.findElement(By.xpath(subttl)).getText();
+	
+			System.out.println("The Subtotal is : "+Subtotal);
+
+			
 		
-}
-
-
-
+		}
 
 }
-}
+
    
     	
     	
